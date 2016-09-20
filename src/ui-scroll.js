@@ -437,6 +437,7 @@ angular.module('ui.scroll', [])
         this.isLoading = false;
         this.isBOF = () => buffer.bof;
         this.isEOF = () => buffer.eof;
+        this.getBuffer = () => buffer;
 
         this.applyUpdates = (arg1, arg2) => {
           if (angular.isFunction(arg1)) {
